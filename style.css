@@ -6,15 +6,17 @@
 }
 
 body{
-    background-color: black;
+    max-height: 100px;
+    background: linear-gradient(90deg, #74ebd5, #acb6e5);
 }
 
 .card
 {
+    box-shadow: 0px 0px 20px rgb(55, 55, 55);
+    background-color: black;
     width: 90%;
-    max-width: 100%;
+    max-width: 50%;
     min-width: 350px;
-    background: linear-gradient(135deg, #74ebd5, #acb6e5);
     color:#fff;
     margin: 100px auto 0;
     border-radius: 20px;
