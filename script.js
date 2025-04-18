@@ -5,7 +5,7 @@ const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
-// Main function to fetch weather
+// Main function
 async function checkWeather(city) {
     try {
         const response = await fetch(apiurl + city + `&appid=${apikey}`);
@@ -57,7 +57,7 @@ searchBox.addEventListener("keypress", (e) => {
     }
 });
 
-// 🧡 Default city when page loads
+// Default city when page loads
 window.addEventListener("load", () => {
-    checkWeather("Vadodara"); // <--- You can change "Vadodara" to any city you want by default
+    checkWeather("Vadodara"); 
 });
